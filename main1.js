@@ -1,0 +1,10 @@
+var fs = require("fs");
+
+fs.readFile("input.txt",function(err,data){
+	if(err){
+	console.log("read file error");
+	}else{
+	console.log(data.toString());
+	}
+})
+console.log("end of file");
